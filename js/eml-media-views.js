@@ -1125,8 +1125,8 @@ window.eml = window.eml || { l10n: {} };
             });
 
             // Add keydown listener to the instance of the Attachments view
-            this.attachments.listenTo( this.controller, 'attachment:keydown:arrow',     this.attachments.arrowEvent );
-            this.attachments.listenTo( this.controller, 'attachment:details:shift-tab', this.attachments.restoreFocus );
+            this.attachments.listenTo( this.collection, 'attachment:keydown:arrow',     this.attachments.arrowEvent );
+            this.attachments.listenTo( this.collection, 'attachment:details:shift-tab', this.attachments.restoreFocus );
 
             this.views.add( this.attachments );
 
